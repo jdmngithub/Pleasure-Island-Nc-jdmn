@@ -359,4 +359,13 @@ footer p {
     footer p {
         display: inline;
     }
+
+
+    /* Home Page */
+
+    .home-video {
+        width: 80%;
+        height: 35vh;
+        margin-top: 1em;
+    }
 }
