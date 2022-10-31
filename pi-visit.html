@@ -1,0 +1,109 @@
+<!--Jose Daniel Mendoza
+    Lesson 10 Assignment - Pleasure Island responsive re-design
+    Web 125
+    10/30/2022
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Visit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51a93a07da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="page-container">
+       
+    <header>
+        <!-- logo/homepage link -->
+        <a class="banner" href="index.html"><img id="banner" src="images/banner_top.png" alt="Pleasure island banner"></a>
+        <div class="nav-large-vp">
+            <ul class="large-nav-bar">
+                <a class="nav-large-tabs" href="index.html"><li class="nav-large-li">Home</li></a>
+                <a class="nav-large-tabs" href="#events"><li class="nav-large-li">Events</li></a>
+                <a class="nav-large-tabs" href="pi-visit.html"><li class="nav-large-li">Visit</li></a>
+                <a class="nav-large-tabs" href="pi-news.html"><li class="nav-large-li">News</li></a>
+                <a class="nav-large-tabs" href="pi-about.html"><li class="nav-large-li">Contact</li></a>
+                <a class="nav-large-tabs" href="pi-about.html"><li class="nav-large-li">About</li></a>
+            </ul>
+        </div>
+        <div class="small-nav-wrap">
+            <a href="#" id="mnicon" class="mnicon-close"><div></div><div></div><div></div></a>
+    
+            <div id="mnpanel" class="mnpanel-open">
+                <nav class="nav-bar">
+                    <a class="nav-li-buttons" href="index.html"><li class="nav-li top-li">Home</li></a>
+                    <a class="nav-li-buttons" href="#"><li class="nav-li">Events</li></a>
+                    <a class="nav-li-buttons" href="#"><li class="nav-li">Visit Us</li></a>
+                    <a class="nav-li-buttons" href="pi-news.html"><li class="nav-li">News</li></a>
+                    <a class="nav-li-buttons" href="pi-about.html"><li class="nav-li">Contact Us</li></a>
+                    <a class="nav-li-buttons" href="pi-about.html"><li class="nav-li">About Us</li></a>
+                </nav>
+            </div>
+        </div>    
+    </header>
+    <div id="content-wrap"> 
+
+        <section class="home-content">
+            <h1>Visit Us</h1>
+            <div class="eat-container">
+                <h2>Where to Eat</h2>
+    
+               <img src="images/eat.jpg" id="eat-1" alt="plate of shrimp alongside beverage">
+               <img src="images/eat-2.jpg" id="eat-2" alt="poke bowl">
+               <a class="eat-link" target="_blank" href="https://www.yelp.com/search?cflt=restaurants&find_loc=Kure+Beach%2C+NC">Restaurants and Dining Options in Carolina Beach and Kure Beach</a>
+            </div> 
+            <p>Pleasure Island is home to some of the area's favorite restaurants, including award winning seafood and locally sourced fare.  With options ranging from fresh oysters and peel-and-eat shrimp, to waterfront dining, breakfast diners, take-out, bistros, cafes, and sub shops plus yummy pizza, donuts, ice cream and fudge, Pleasure Island is a popular dining destination for area residents and visitors alike. During the off season many restaurants offer great deals for the locals.</p>
+            <p>Our Pleasure Island Chamber of Commerce members offer a wide range of dining options ideal for everyday residents and visitors to the island (from near or far!). Affordable meals for the family, romantic dining for couples, fun get-togethers with friends - we've got the place for you! Search our member directory to find the off season specials or add all your restaurant ideas to your Trip Planner Itinerary. You'll be sure to get the best of Where to Eat on Pleasure Island!</p>
+                  
+        </section>
+        
+    <section id="events" class="home-content event-content">
+        <h1>Events</h1>
+        <h2>Great Annual Events!</h2> 
+        <p>The Pleasure Island Chamber also hosts a variety of seasonal and annual events, many of which have become very popular and attract visitors from all over the region.</p>
+        <p><strong> Annual events include:</strong> </p>
+        <ul class="event-list">
+            <li>Carolina Beach Music Festival</li>
+            <li>Free Summer Concert Series in Fort Fisher</li>
+            <li>Pets in the Park</li>
+            <li>Pleasure Island Chamber and Friends Golf Tournament</li>
+            <li>Trash to Treasure Yard Sale</li>
+            <li>15th Annual Cape Fear Kite Festival</li>
+            <li>12th Annual Pleasure Island Holiday Shopping Spree</li>
+        </ul>
+        <p>Not only do these events enhance life for our residents here on the island, they also give a big boost to local businesses and help drive the tourism industry for Carolina Beach, Kure Beach, and Fort Fisher. </p>
+              
+    </section>
+
+    <script>
+        function showHideNav() {
+            let mnicon = document.getElementById('mnicon');
+            let mnpanel = document.getElementById('mnpanel');
+            if (mnicon.className == 'mnicon-open') {
+                mnicon.setAttribute('class','mnicon-close');
+                mnpanel.setAttribute('class', 'mnpanel-open');
+            } else {
+                mnicon.setAttribute('class','mnicon-open');
+                mnpanel.setAttribute('class', 'mnpanel-close');
+            }
+        }
+        document.getElementById('mnicon').addEventListener('click',showHideNav);
+
+    </script>
+    </div>
+        <footer id="footer">
+            <ul class="social-links">
+                <a href="https://www.facebook.com/PleasureIslandNC/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/pleasureisland"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/pleasureislandchamber/"><i class="fa-brands fa-square-instagram"></i></a>
+            </ul>
+            <p> © Copyright 2012, All Rights Reserved.</p>
+            <p>Brought to you by the Pleasure Island Chamber of Commerce & Developer J.D.Mendoza</p>
+        </footer>
+    </div>
+</body>
+
+</html>

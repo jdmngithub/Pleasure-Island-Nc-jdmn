@@ -1,0 +1,87 @@
+<!--Jose Daniel Mendoza
+    Lesson 10 Assignment - Pleasure Island responsive re-design
+    Web 125
+    10/30/2022
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51a93a07da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="page-container">
+       
+    <header>
+        <!-- logo/homepage link -->
+        <a class="banner" href="index.html"><img id="banner" src="images/banner_top.png" alt="Pleasure island banner"></a>
+        <div class="nav-large-vp">
+            <ul class="large-nav-bar">
+                <a class="nav-large-tabs" href="index.html"><li class="nav-large-li">Home</li></a>
+                <a class="nav-large-tabs" href="pi-visit.html"><li class="nav-large-li">Events</li></a>
+                <a class="nav-large-tabs" href="pi-visit.html"><li class="nav-large-li">Visit</li></a>
+                <a class="nav-large-tabs" href="pi-news.html"><li class="nav-large-li">News</li></a>
+                <a class="nav-large-tabs" href="pi-about.html"><li class="nav-large-li">Contact</li></a>
+                <a class="nav-large-tabs" href="pi-about.html"><li class="nav-large-li">About</li></a>
+            </ul>
+        </div>
+        <div class="small-nav-wrap">
+            <a href="#" id="mnicon" class="mnicon-close"><div></div><div></div><div></div></a>
+        
+            <div id="mnpanel" class="mnpanel-open">
+                <nav class="nav-bar">
+                    <a class="nav-li-buttons" href="#"><li class="nav-li top-li">Home</li></a>
+                    <a class="nav-li-buttons" href="pi-visit.html"><li class="nav-li">Events</li></a>
+                    <a class="nav-li-buttons" href="pi-visit.html"><li class="nav-li">Visit</li></a>
+                    <a class="nav-li-buttons" href="pi-news.html"><li class="nav-li">News</li></a>
+                    <a class="nav-li-buttons" href="pi-about.html"><li class="nav-li">Contact Us</li></a>
+                    <a class="nav-li-buttons" href="pi-about.html"><li class="nav-li">About Us</li></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="content-wrap"> 
+
+    <section class="home-content">
+        <h1>Welcome to Pleasure Island, North Carolina!</h1>
+        <iframe class="home-video" src="https://www.youtube.com/embed/7D_g4M8zz5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Discover our beaches, our history, and our hospitality</h2>
+        <p>Plan your summer vacation at Pleasure Island, home to some of the most beautiful North Carolina beaches. Enjoy the sand, surf, and our quaint, historic beach towns of Carolina Beach, Kure Beach, and historic Fort Fisher.</p>
+        <p>Come for the day, a weekend getaway, or a long beach vacation. You're sure to discover why the summer never ends on Pleasure Island!</p>
+        <p>You'll find everything you need to create your own custom itinerary for your Pleasure Island trip here on our site. Check the Event Calendar to see what's happening on the island. Find out Where to Stay and book your reservations now. Then choose ideas for Where to Eat, Where to Play, and any Local Services you might need along the way. We've got all your Pleasure Island vacation planning right here!</p>
+
+    </section>
+
+    <script>
+        function showHideNav() {
+            let mnicon = document.getElementById('mnicon');
+            let mnpanel = document.getElementById('mnpanel');
+            if (mnicon.className == 'mnicon-open') {
+                mnicon.setAttribute('class','mnicon-close');
+                mnpanel.setAttribute('class', 'mnpanel-open');
+            } else {
+                mnicon.setAttribute('class','mnicon-open');
+                mnpanel.setAttribute('class', 'mnpanel-close');
+            }
+        }
+        document.getElementById('mnicon').addEventListener('click',showHideNav);
+
+    </script>
+    </div>
+        <footer id="footer">
+            <ul class="social-links">
+                <a href="https://www.facebook.com/PleasureIslandNC/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/pleasureisland"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/pleasureislandchamber/"><i class="fa-brands fa-square-instagram"></i></a>
+            </ul>
+            <p> © Copyright 2012, All Rights Reserved.</p>
+            <p>Brought to you by the Pleasure Island Chamber of Commerce & Developer J.D.Mendoza</p>
+        </footer>
+    </div>
+</body>
+
+</html>

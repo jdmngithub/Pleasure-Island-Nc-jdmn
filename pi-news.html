@@ -1,0 +1,90 @@
+<!--Jose Daniel Mendoza
+    Lesson 10 Assignment - Pleasure Island responsive re-design
+    Web 125
+    10/30/2022
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PI Visit</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/51a93a07da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="page-container">
+   
+    <header>
+        <!-- logo/homepage link -->
+        <a class="banner" href="index.html"><img id="banner" src="images/banner_top.png" alt="Pleasure island banner"></a>
+        <div class="nav-large-vp">
+            <ul class="large-nav-bar">
+                <a class="nav-large-tabs" href="index.html"><li class="nav-large-li">Home</li></a>
+                <a class="nav-large-tabs" href="pi-visit.html"><li class="nav-large-li">Events</li></a>
+                <a class="nav-large-tabs" href="pi-visit.html"><li class="nav-large-li">Visit</li></a>
+                <a class="nav-large-tabs" href="pi-news.html"><li class="nav-large-li">News</li></a>
+                <a class="nav-large-tabs" href="pi-about.html"><li class="nav-large-li">Contact</li></a>
+                <a class="nav-large-tabs" href="pi-about.html"><li class="nav-large-li">About</li></a>
+            </ul>
+        </div>
+        <div class="small-nav-wrap">
+            <a href="#" id="mnicon" class="mnicon-close"><div></div><div></div><div></div></a>
+        
+            <div id="mnpanel" class="mnpanel-open">
+                <nav class="nav-bar">
+                    <a class="nav-li-buttons" href="index.html"><li class="nav-li top-li">Home</li></a>
+                    <a class="nav-li-buttons" href="pi-visit.html"><li class="nav-li">Events</li></a>
+                    <a class="nav-li-buttons" href="pi-visit.html"><li class="nav-li">Visit Us</li></a>
+                    <a class="nav-li-buttons" href="#"><li class="nav-li">News</li></a>
+                    <a class="nav-li-buttons" href="pi-about.html"><li class="nav-li">Contact Us</li></a>
+                    <a class="nav-li-buttons" href="pi-about.html"><li class="nav-li">About Us</li></a>
+                </nav>
+            </div>
+        </div>    
+    </header>
+    <div id="content-wrap"> 
+
+    <section class="home-content news-content">
+        <h1>News From Us</h1>
+        <h2>Newsletter Archive</h2>
+        <p class="news-archive"> An archive of Pleasure Island newsletters is coming soon. </p>
+        
+        
+        <h2> First case of monkeypox identified in New Hanover County</h2>
+        <img class="news-img" src="images/news.jpg" alt="monkeypox examples">
+        <p>“New Hanover County Public Health and our Pandemic Operations team have been working with the North Carolina Department of Health and Human Services and Centers for Disease Control over the past several months to track the spread of monkeypox, provide vaccines to anyone who is eligible, and be prepared to respond when our first case was confirmed,” said Health Director David Howard. “Our team is working with local healthcare providers to ensure we identify any case quickly, work on contact tracing, offer the vaccine to any close contact, and ensure that any impacted individuals isolate.”</p>
+        <p>“Monkeypox infections continue to be rare, but they are rising across the country, and anyone can get monkeypox so it’s important to be vigilant and aware of symptoms,” said Howard. “If you have unexplained or concerning symptoms including a rash, lesions, or sores, please contact your healthcare provider or call the New Hanover County Communicable Disease team at 910-367-2484 for testing. Rashes should be covered and you should avoid being intimate with anyone until you have been checked out. An additional recommended precaution is to avoid intimate contact with anyone you don’t know.”</p>
+
+    </section>
+
+    <script>
+        function showHideNav() {
+            let mnicon = document.getElementById('mnicon');
+            let mnpanel = document.getElementById('mnpanel');
+            if (mnicon.className == 'mnicon-open') {
+                mnicon.setAttribute('class','mnicon-close');
+                mnpanel.setAttribute('class', 'mnpanel-open');
+            } else {
+                mnicon.setAttribute('class','mnicon-open');
+                mnpanel.setAttribute('class', 'mnpanel-close');
+            }
+        }
+        document.getElementById('mnicon').addEventListener('click',showHideNav);
+
+    </script>
+    </div>
+        <footer id="footer">
+            <ul class="social-links">
+                <a href="https://www.facebook.com/PleasureIslandNC/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/pleasureisland"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/pleasureislandchamber/"><i class="fa-brands fa-square-instagram"></i></a>
+            </ul>
+            <p> © Copyright 2012, All Rights Reserved.</p>
+            <p>Brought to you by the Pleasure Island Chamber of Commerce & Developer J.D.Mendoza</p>
+        </footer>
+    </div>
+</body>
+
+</html>
